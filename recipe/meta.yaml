@@ -1,5 +1,5 @@
 {% set name = "xontrib-ssh-agent" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d455ee83c80216ea7af451d7c1b3d254ded3c113a5d82763f5056a5a86280337
+  sha256: 3ed5765dd763ca6081c4a9c205aa6a0a19ecb6d606416c6fa105f4cf1490f51b
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'ssh-agent xonsh integration'
+  summary: ssh-agent xonsh integration
 
 extra:
   recipe-maintainers:
