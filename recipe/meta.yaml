@@ -1,5 +1,5 @@
 {% set name = "xontrib-ssh-agent" %}
-{% set version = "1.0.8" %}
+{% set version = "1.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a1daac9d375bd57ebd6608231e5bf7a49e479095ba5db9a539419bdd6956049
+  sha256: f62dc525ca05ce875c864c159b9d6abac40fd60dd01657405318d23b8f74993c
 
 build:
   noarch: python
